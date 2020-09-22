@@ -5,3 +5,10 @@ function findMatching(drivers, string) {
   })
   return newDrivers
 }
+
+function fuzzyMatch(drivers, string) {
+  const newDrivers = drivers.filter(name => {
+    return name.startsWith(string)
+  });
+  return newDrivers;
+}
