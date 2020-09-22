@@ -12,3 +12,10 @@ function fuzzyMatch(drivers, string) {
   });
   return newDrivers;
 }
+
+function matchName(drivers, string) {
+  const newDrivers = drivers.filter(name => {
+    return name.name === string
+  });
+  return newDrivers
+}
